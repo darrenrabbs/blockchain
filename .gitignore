@@ -1,0 +1,49 @@
+.history
+# Binaries for programs and plugins
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+
+# Output of the build process
+blockchain-app
+
+# Build directories
+_build/
+build/
+bin/
+
+# Vendor directory
+vendor/
+
+# Go specific files
+*.test
+*.out
+
+# Logs and databases
+*.log
+*.sql
+*.sqlite
+
+# IDE and Editor files
+# IntelliJ
+.idea/
+*.iml
+
+# VS Code
+.vscode/
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# MacOS files
+.DS_Store
+
+# Emacs
+*~
+
+# Vim
+*.swp
+*.swo
