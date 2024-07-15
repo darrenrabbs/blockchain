@@ -1,9 +1,10 @@
 package main
 
 import (
-	"github/com/darrenrabbs/blockchain",
 	"fmt"
 	"strconv"
+
+	"github.com/darrenrabbs/blockchain/blockchain"
 )
 
 func main() {
@@ -56,8 +57,9 @@ func main() {
 		fmt.Printf("Block Hash: %x\n", block.Hash)
 
 		pow := blockchain.NewProofOfWork(block)
-		fmt.Printf("IsValidPoW: %s\n",
-			strconv.FormatBool(pow.Validate()))
+		fmt.Printf("IsValidPoW: %s\n", strconv.FormatBool(pow.Validate()))
+		fmt.Println()
+
 		fmt.Println("Transactions:")
 		for _, tx := range block.Transactions {
 			fmt.Printf("Sender: %s\n", tx.Sender)
